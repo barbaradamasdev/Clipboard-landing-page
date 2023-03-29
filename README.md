@@ -4,7 +4,7 @@
 
 ## 🔗 Link
 
-- [Live Version](https://https://barbaradamasdev.github.io//clipboard-landing-page)
+- [Live Version](https://https://barbaradamasdev.github.io/clipboard-landing-page)
 
 ## 😄 Hello!
 
