@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --CYAN: hsl(171, 66%, 44%);
+  --LIGHTBLUE: hsl(233, 100%, 69%);
+  --DARKBLUE: hsl(210, 10%, 33%);
+  --BLUE: hsl(201, 11%, 66%);
+}
+
+* {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+body {
+  font-size: 1.12rem;
+  color: var(--DARKBLUE);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General style */
+main {
+  padding: 2rem;
+  text-align: center;
+  background-image: url(images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 1.9rem;
+}
+h2 {
+  font-size: 1.7rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font-size: 1rem;
+  opacity: 70%;
+  line-height: 1.5rem;
+}
+button {
+  color: white;
+  margin: 10px auto;
+  padding: 17px 45px;
+  width: 300px;
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 2.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+}
+
+footer a:hover {
+  color: var(--CYAN);
+}
+
+.btn-green {
+  background-color: var(--CYAN);
+  box-shadow: inset 0 -2px 3px 1px rgb(25, 159, 140);
+}
+
+.btn-blue {
+  background-color: var(--LIGHTBLUE);
+  box-shadow: inset 0 -2px 1px 2px rgb(87, 87, 211);
+}
+.btn-green:hover,
+.btn-blue:hover {
+  opacity: 70%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__section {
+  padding: 5rem 0 3rem;
+}
+
+/* Section 1 - Banner */
+.main__section__banner img {
+  margin-bottom: 2rem;
+}
+
+.main__section__banner p {
+  margin-bottom: 3rem;
+}
+
+/* Section 2 - Track */
+.main__section__track {
+  padding-top: 5rem;
+}
+.main__section__track.flex {
+  padding-top: 1rem;
+}
+
+.main__section__track h3 {
+  margin: 2rem 0 0;
+}
+.main__section__track-img figure {
+  margin: 2rem 0;
+}
+.main__section__track-img img {
+  width: 100%;
+  margin: 0;
+}
+
+/* Section 3 - Devices */
+.main__section__devices {
+  padding-top: 9rem;
+}
+.main__section__devices figure {
+  margin: 2rem 0;
+}
+.main__section__devices img {
+  width: 100%;
+  margin: 0;
+}
+
+.main__section.padding-bottom-less {
+  padding-bottom: 0;
+}
+
+/* Section 4 - Info tools */
+.main__section__info-tools {
+  padding-top: 2rem;
+  padding-bottom: 1.8rem;
+}
+
+.main__section__info-tools__flex {
+  justify-content: space-evenly;
+  gap: 2rem;
+  margin: 5rem 0;
+}
+
+/* Section 5 - Companies */
+.main__section__companies {
+  justify-content: space-between;
+  gap: 3.7rem;
+  padding: 0;
+}
+.main__section__companies img {
+  margin: auto;
+  max-height: 40px;
+}
+
+/* Section 6 - CTA */
+.main__section__cta {
+  margin-top: 11rem;
+  margin-bottom: 10rem;
+}
+
+.main__section__cta p {
+  margin-bottom: 2rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: rgba(245, 246, 248, 255);
+  padding: 3rem 4rem;
+}
+
+.footer img {
+  width: 60px;
+}
+
+hr {
+  display: none;
+}
+
+.footer,
+.footer__links {
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer__socialMedia {
+  flex-direction: row;
+  gap: 1.5rem;
+  transform: scale(170%);
+}
+
+.footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (min-width: 375px) {
+  main {
+    background-image: url(images/bg-header-desktop.png);
+    background-size: contain;
+  }
+}
+
+@media screen and (min-width: 941px) {
+  /* body {
+    margin: auto;
+  } */
+  .flex {
+    flex-direction: row;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+  h2 {
+    font-size: 2.3rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+
+  /* Section 1 */
+  .main__section__banner {
+    max-width: 750px;
+    margin: auto;
+  }
+
+  .main__section__banner p {
+    padding: 0 2rem;
+  }
+
+  /* Button gap */
+  .main__section__btn {
+    gap: 1rem;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  /* Section 2 */
+  .main__section__track .padding-center {
+    max-width: 750px;
+    margin: auto;
+  }
+
+  .main__section__track .flex {
+    margin: auto;
+    gap: 6rem;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+  }
+
+  .main__section__track-img img {
+    width: 750px;
+    max-width: 70vw;
+    margin-left: -220px;
+  }
+
+  .main__section__track__txt {
+    max-width: 400px;
+  }
+
+  /* Section 3 */
+  .main__section__devices {
+    padding-top: 5.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .main__section__devices img {
+    max-width: 900px;
+    margin: 4.5rem 0 0;
+  }
+
+  .main__section__devices p {
+    margin: auto;
+    max-width: 750px;
+  }
+  .main__section__devices figure {
+    margin-bottom: 0;
+  }
+
+  /* Section 4 */
+  .main__section__info-tools {
+    padding-bottom: 4rem;
+  }
+
+  .main__section__info-tools__flex {
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+  }
+  .main__section__info-tools .info-tools {
+    max-width: 350px;
+  }
+
+  .info-tools p {
+    font-size: 1rem;
+  }
+
+  /* Section 5 */
+  .main__section__companies {
+    max-width: 1150px;
+    margin: auto;
+  }
+
+  /* Section 6 */
+  .main__section__cta {
+    margin-bottom: 8.5rem;
+  }
+
+  .main__section__cta p {
+    margin: auto;
+    max-width: 750px;
+  }
+
+  .main__section__btn {
+    margin-top: 2rem;
+  }
+
+  /* Footer */
+
+  .footer {
+    padding: 3rem 9rem;
+    justify-content: space-between;
+    gap: 3rem;
+    max-width: 1150px;
+    margin: auto;
+  }
+
+  .footer .flex {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  .footer__links.flex {
+    gap: 1rem;
+    width: 120px;
+  }
+
+  .footer__socialMedia.flex {
+    flex-direction: row;
+    width: 80px;
+    justify-content: space-between;
+    gap: 0.4rem;
+  }
+}
+
+@media screen and (min-width: 1190px) {
+  hr {
+    width: 120px;
+    opacity: 0%;
+    display: inherit;
+  }
+}
